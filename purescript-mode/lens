@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# key: lens
+# name: lens
+# expand-env: ((yas-indent-line 'fixed))
+# contributor: Mrinal Purohit <github@mrinalpurohit.in>
+# --
+
+${1:field} = lens (\\(${1:$(upcase-initials yas-text)} rec) -> rec) (\\_ -> ${1:$(upcase-initials yas-text)})

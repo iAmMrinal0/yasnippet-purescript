@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# key: inst
+# name: instance
+# condition: (= (length "inst") (current-column))
+# contributor: Mrinal Purohit <github@mrinalpurohit.in>
+# --
+instance ${1:$(downcase yas-text)}${2:$(capitalize yas-text)} :: ${1:Class} ${2:Type} where ${3:func} = ${4:undefined}

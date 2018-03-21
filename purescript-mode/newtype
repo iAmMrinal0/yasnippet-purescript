@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# key: new
+# name: newtype
+# condition: (= (length "new") (current-column))
+# contributor: Mrinal Purohit <github@mrinalpurohit.in>
+# --
+newtype ${1:Type} = $1
+  { ${2:id} :: ${3:Int} }
+
+derive instance generic$1 :: Generic $1 _
+instance ${4:encode}$1 :: ${5:$(capitalize yas-text)} $1 where $4 = default${5:$(capitalize yas-text)}

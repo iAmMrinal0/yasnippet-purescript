@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: \
+# name: lambda
+# contributor: Mrinal Purohit <github@mrinalpurohit.in>
+# --
+\\${1:x} -> ${2:undefined}$0
