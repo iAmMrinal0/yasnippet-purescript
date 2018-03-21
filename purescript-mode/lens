@@ -5,4 +5,5 @@
 # contributor: Mrinal Purohit <github@mrinalpurohit.in>
 # --
 
-${1:field} = lens (\\(${1:$(upcase-initials yas-text)} rec) -> rec) (\\_ -> ${1:$(upcase-initials yas-text)})
+_$1 :: forall a b c. Newtype a {$1 :: c | b} => Lens' a c
+_${1:field} = lens (unwrap >>> _.$1) (\oldRec newVal -> wrap ((unwrap oldRec) {$1 = newVal}))
